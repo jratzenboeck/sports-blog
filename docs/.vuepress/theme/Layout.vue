@@ -1,14 +1,15 @@
-<template/>
+<template>
+  <TheHeader />
+</template>
 
 <script>
+import TheHeader from './components/TheHeader.vue';
+
 export default {
-  data: function() {
-return {
-    key: 'asldfjadsl'
-  };
-},
+  components: {
+    TheHeader
+  }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
