@@ -1,10 +1,8 @@
 <template>
-  <v-app>
-    <v-content>
-      <TheNavbar />
-      <TheHeroImageCarousel />
-    </v-content>
-  </v-app>
+  <div>
+    <TheNavbar />
+    <TheHeroImageCarousel />
+  </div>
 </template>
 
 <script>

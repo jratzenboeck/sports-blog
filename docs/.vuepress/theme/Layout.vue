@@ -1,13 +1,15 @@
 <template>
-  <TheHeader />
+  <BaseLayout>
+    <Content />
+  </BaseLayout>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue';
+import BaseLayout from './components/BaseLayout.vue';
 
 export default {
   components: {
-    TheHeader
+    BaseLayout
   }
 };
 </script>

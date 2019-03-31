@@ -16,7 +16,8 @@ import Vuetify, {
   VFlex,
   VImg,
   VCarousel,
-  VCarouselItem
+  VCarouselItem,
+  VFooter
 } from 'vuetify/lib';
 import 'vuetify/src/stylus/app.styl';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
@@ -25,6 +26,9 @@ export default ({
   Vue // the version of Vue being used in the VuePress app
 }) => {
   Vue.use(Vuetify, {
+    theme: {
+      primary: '#00838f'
+    },
     iconfont: 'md',
     components: {
       VApp,
@@ -44,7 +48,8 @@ export default ({
       VFlex,
       VImg,
       VCarousel,
-      VCarouselItem
+      VCarouselItem,
+      VFooter
     }
   });
 };
