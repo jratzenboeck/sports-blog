@@ -4,8 +4,13 @@
     <v-img src="/img/profile.jpg" max-height="60" max-width="60" class="c-profile-picture" />
     <v-toolbar-title>jratzenboeck sports blog</v-toolbar-title>
     <v-toolbar-items class="hidden-xs-only ml-2">
-      <v-btn flat>Startseite</v-btn>
-      <v-btn flat>Über mich</v-btn>
+      <v-btn flat>
+        <router-link to="/">Startseite</router-link>
+      </v-btn>
+
+      <v-btn flat>
+        <router-link to="/about">Über mich</router-link>
+      </v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

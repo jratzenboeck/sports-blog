@@ -1,8 +1,10 @@
 <template>
   <BaseLayout>
-    <h1 class="text-xs-center pa-2">Willkommen auf meinem Sport Blog</h1>
-    <p class="text-xs-center pa-2">Hier findest du alle News zu meiner sportlichen Leidenschaft.</p>
-    <PostsGrid />
+    <h1 class="text-xs-center pt-4 pb-2">Willkommen auf meinem Sport Blog</h1>
+    <p
+      class="subheading text-xs-center"
+    >Hier findest du alle News zu meiner sportlichen Leidenschaft.</p>
+    <PostsGrid/>
   </BaseLayout>
 </template>
 

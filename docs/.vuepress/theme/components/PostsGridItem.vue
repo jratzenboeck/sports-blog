@@ -4,7 +4,7 @@
       <div>
         <h3 class="headline mb-0">{{ post.title }}</h3>
         <div>{{ post.frontmatter.date }}</div>
-        <div>{{ excerpt }}</div>
+        <div v-html="post.excerpt"></div>
       </div>
     </v-card-title>
     <v-card-actions>
@@ -19,11 +19,6 @@ export default {
     post: {
       type: Object,
       required: true
-    }
-  },
-  computed: {
-    excerpt() {
-      return `${this.post.title.split(' ', 20).join(' ')}...`;
     }
   }
 };
