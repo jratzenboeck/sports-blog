@@ -4,7 +4,7 @@
     <p class="text-xs-center subheading">Wer bin ich und um was geht es hier?</p>
     <v-container grid-list-lg>
       <v-layout row wrap>
-        <v-flex xs12 sm6 pr-3>
+        <v-flex xs12 sm6>
           <Content />
         </v-flex>
         <v-flex xs12 sm6>
