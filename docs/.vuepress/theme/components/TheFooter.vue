@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="pa-3">
+  <v-footer class="pa-3 c-footer">
     <v-layout>
       <div>&copy; {{ new Date().getFullYear() }} Jürgen Ratzenböck</div>
       <v-spacer></v-spacer>
@@ -35,4 +35,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@import '../styles/colors';
+.c-footer {
+  background: $primaryRegular;
+  color: $textLight;
+}
+</style>

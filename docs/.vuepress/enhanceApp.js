@@ -17,7 +17,12 @@ import Vuetify, {
   VImg,
   VCarousel,
   VCarouselItem,
-  VFooter
+  VFooter,
+  VIcon,
+  VList,
+  VListTile,
+  VListTileContent,
+  VListTileTitle
 } from 'vuetify/lib';
 import 'vuetify/src/stylus/app.styl';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
@@ -34,9 +39,6 @@ export default ({
   Vue.component('Layout', Layout);
 
   Vue.use(Vuetify, {
-    theme: {
-      primary: '#00838f'
-    },
     iconfont: 'md',
     components: {
       VApp,
@@ -57,7 +59,12 @@ export default ({
       VImg,
       VCarousel,
       VCarouselItem,
-      VFooter
+      VFooter,
+      VIcon,
+      VList,
+      VListTile,
+      VListTileContent,
+      VListTileTitle
     }
   });
 };
