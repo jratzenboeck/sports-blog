@@ -22,14 +22,15 @@ import Vuetify, {
   VList,
   VListTile,
   VListTileContent,
-  VListTileTitle
+  VListTileTitle,
+  VListTileAvatar
 } from 'vuetify/lib';
 import 'vuetify/src/stylus/app.styl';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 import './theme/styles/style.scss';
-import About from './theme/About.vue';
-import Home from './theme/Home.vue';
-import Layout from './theme/Layout.vue';
+import About from './theme/layouts/About.vue';
+import Home from './theme/layouts/Home.vue';
+import Layout from './theme/layouts/Layout.vue';
 
 export default ({
   Vue // the version of Vue being used in the VuePress app
@@ -64,7 +65,8 @@ export default ({
       VList,
       VListTile,
       VListTileContent,
-      VListTileTitle
+      VListTileTitle,
+      VListTileAvatar
     }
   });
 };

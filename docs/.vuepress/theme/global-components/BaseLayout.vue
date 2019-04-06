@@ -1,16 +1,16 @@
 <template>
   <v-app>
-    <TheHeader />
+    <TheHeader/>
     <v-content>
-      <slot />
+      <slot/>
     </v-content>
-    <TheFooter />
+    <TheFooter/>
   </v-app>
 </template>
 
 <script>
-import TheHeader from './TheHeader.vue';
-import TheFooter from './TheFooter.vue';
+import TheHeader from '../components/TheHeader.vue';
+import TheFooter from '../components/TheFooter.vue';
 
 export default {
   components: {

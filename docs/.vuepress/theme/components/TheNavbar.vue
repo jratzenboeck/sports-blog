@@ -18,7 +18,7 @@
         >
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer v-model="showNavigationDrawer" temporary absolute width="200">
+    <v-navigation-drawer v-model="showNavigationDrawer" temporary absolute width="250">
       <v-list>
         <v-list-tile
           v-for="item in $themeConfig.navbarItems"
@@ -26,7 +26,7 @@
           :to="item.path"
           avatar
         >
-          <v-list-tile-avatar class="mr-2">
+          <v-list-tile-avatar>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-avatar>
           <v-list-tile-content>

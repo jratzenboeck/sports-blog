@@ -5,10 +5,10 @@
     <v-container grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12 sm6>
-          <Content/>
+          <Content />
         </v-flex>
         <v-flex xs12 sm6>
-          <v-img src="/img/about.jpg" width="100%" height="auto" class="c-about-image"/>
+          <v-img src="/img/about.jpg" width="100%" height="auto" class="c-about-image" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -16,13 +16,7 @@
 </template>
 
 <script>
-import BaseLayout from './components/BaseLayout.vue';
-
-export default {
-  components: {
-    BaseLayout
-  }
-};
+export default {};
 </script>
 
 <style scoped lang="scss">

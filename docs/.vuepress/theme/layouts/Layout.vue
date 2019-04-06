@@ -5,13 +5,7 @@
 </template>
 
 <script>
-import BaseLayout from './components/BaseLayout.vue';
-
-export default {
-  components: {
-    BaseLayout
-  }
-};
+export default {};
 </script>
 
 <style scoped></style>

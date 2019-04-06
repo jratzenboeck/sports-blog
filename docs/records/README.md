@@ -1,0 +1,4 @@
+---
+title: Wettkampfhighlights
+layout: CompetitionHighlights
+---

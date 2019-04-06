@@ -15,15 +15,12 @@ export default {
   components: {
     PostsGridItem
   },
-  data() {
-    return {
-      excludedPages: ['/', '/about/']
-    };
-  },
   computed: {
     posts() {
       return this.$site.pages
-        .filter(page => this.excludedPages.indexOf(page.path) === -1)
+        .filter(
+          page => this.$themeConfig.navbarItems.map(item => item.path).indexOf(page.path) === -1
+        )
         .sort((x, y) => {
           return new Date(y.frontmatter.date).getTime() - new Date(x.frontmatter.date).getTime();
         });

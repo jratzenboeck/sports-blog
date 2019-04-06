@@ -11,6 +11,11 @@ module.exports = {
         icon: 'person',
         title: 'Über mich',
         path: '/about/'
+      },
+      {
+        icon: 'directions_bike',
+        title: 'Wettkampfhighlights',
+        path: '/records/'
       }
     ]
   }

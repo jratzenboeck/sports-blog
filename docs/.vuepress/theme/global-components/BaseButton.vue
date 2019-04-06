@@ -2,6 +2,7 @@
   <v-btn
     :color="$themeConfig.primaryColor"
     class="white--text"
+    :flat="flat"
     :type="type"
     @click="$emit('click', $event.target)"
   >
@@ -16,6 +17,10 @@ export default {
       type: String,
       default: 'button',
       validate: value => ['button', 'submit'].indexOf(value)
+    },
+    flat: {
+      type: Boolean,
+      default: false
     }
   }
 };
