@@ -3,17 +3,17 @@ module.exports = {
     primaryColor: '#00838f',
     navbarItems: [
       {
-        icon: '$vuetify.icons.home',
+        icon: 'home',
         title: 'Startseite',
         path: '/'
       },
       {
-        icon: '$vuetify.icons.person',
+        icon: 'person',
         title: 'Über mich',
         path: '/about/'
       },
       {
-        icon: '$vuetify.icons.medal',
+        icon: 'medal',
         title: 'Wettkampfhighlights',
         path: '/records/'
       }
