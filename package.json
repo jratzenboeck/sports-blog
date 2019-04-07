@@ -4,8 +4,9 @@
   "description": "jratzenboeck sports blog",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "NODE_ENV=development vuepress dev docs",
+    "build": "NODE_ENV=development vuepress build docs",
+    "prod": "NODE_ENV=production vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,8 @@
     "vuepress": "^1.0.0-alpha.44"
   },
   "dependencies": {
-    "vuetify": "^1.5.8",
-    "@fortawesome/fontawesome-free": "^5.8.1"
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "vue-analytics": "^5.16.4",
+    "vuetify": "^1.5.8"
   }
 }

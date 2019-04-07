@@ -1,12 +1,12 @@
 <template>
   <v-card>
-    <v-img :src="`/img/posts${post.path}hero.jpg`" aspect-ratio="2.75"/>
+    <v-img :src="`/img/posts${post.path}hero.jpg`" aspect-ratio="2.75" />
     <v-card-title>
       <div>
         <h3 class="headline mb-0">{{ post.title }}</h3>
         <v-layout align-center>
           <v-flex shrink class="pr-0">
-            <v-icon>calendar_today</v-icon>
+            <BaseIcon icon-name="calendar" />
           </v-flex>
           <v-flex grow>
             <span>{{ publishDate }}</span>
@@ -16,7 +16,7 @@
       </div>
     </v-card-title>
     <v-card-actions class="px-3 pb-3 pt-0">
-      <BaseButton>Mehr lesen</BaseButton>
+      <BaseButton @click="readMoreClicked()">Mehr lesen</BaseButton>
     </v-card-actions>
   </v-card>
 </template>
@@ -37,6 +37,12 @@ export default {
       return `${padWithZero(date.getDate())}.${padWithZero(
         date.getMonth() + 1
       )}.${date.getFullYear()}`;
+    }
+  },
+  methods: {
+    readMoreClicked() {
+      this.$router.push(this.post.path);
+      this.$trackClick(this.$page.title, 'read-more');
     }
   }
 };

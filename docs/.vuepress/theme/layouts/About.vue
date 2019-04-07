@@ -1,6 +1,6 @@
 <template>
   <BaseLayout>
-    <h1 class="text-xs-center pt-4 pb-2">Das bin ich</h1>
+    <h1 class="text-xs-center">Das bin ich</h1>
     <p class="text-xs-center subheading">Wer bin ich und um was geht es hier?</p>
     <v-container grid-list-lg>
       <v-layout row wrap>

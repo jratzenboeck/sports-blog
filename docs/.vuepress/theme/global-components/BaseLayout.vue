@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <TheHeader/>
-    <v-content>
-      <slot/>
+    <TheHeader />
+    <v-content class="pa-3">
+      <slot />
     </v-content>
-    <TheFooter/>
+    <TheFooter />
   </v-app>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
   <BaseLayout>
-    <h1 class="text-xs-center pt-4 pb-2">Wettkampfhighlights</h1>
-    <p
-      class="subheading text-xs-center"
-    >Ein Überblick über meine bisherigen persönlichen Bestzeiten bei Wettkämpfen.</p>
-    <PersonalRecords/>
+    <h1 class="text-xs-center">Wettkampfhighlights</h1>
+    <p class="subheading text-xs-center">
+      Ein Überblick über meine bisherigen persönlichen Bestzeiten bei Wettkämpfen.
+    </p>
+    <PersonalRecords />
   </BaseLayout>
 </template>
 

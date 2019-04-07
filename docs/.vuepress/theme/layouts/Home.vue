@@ -1,6 +1,6 @@
 <template>
   <BaseLayout>
-    <h1 class="text-xs-center pt-4 pb-2">Willkommen auf meinem Sport Blog</h1>
+    <h1 class="text-xs-center">Willkommen auf meinem Sport Blog</h1>
     <p class="subheading text-xs-center">
       Hier findest du alle News zu meiner sportlichen Leidenschaft.
     </p>

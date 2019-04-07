@@ -6,7 +6,7 @@
         :key="index"
         :class="['xs12', index > 0 ? 'sm6' : '']"
       >
-        <PersonalRecordsItem :record="record"/>
+        <PersonalRecordsItem :record="record" />
       </v-flex>
     </v-layout>
   </v-container>
