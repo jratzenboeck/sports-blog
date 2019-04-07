@@ -6,13 +6,13 @@
       </template>
     </NumberAnimation>
     <span>:</span>
-    <NumberAnimation :end-value="minutes" :animation-delay="1" :animation-duration="5">
+    <NumberAnimation :end-value="minutes" :animation-delay="1" :animation-duration="3">
       <template v-slot="{ currentValue }">
         <h3 class="d-inline-block">{{ formatTimeValue(currentValue) }}</h3>
       </template>
     </NumberAnimation>
     <span>:</span>
-    <NumberAnimation :end-value="seconds" :animation-delay="6" :animation-duration="5">
+    <NumberAnimation :end-value="seconds" :animation-delay="4" :animation-duration="3">
       <template v-slot="{ currentValue }">
         <h3 class="d-inline-block">{{ formatTimeValue(currentValue) }}</h3>
       </template>
@@ -22,6 +22,7 @@
 
 <script>
 import NumberAnimation from './NumberAnimation.vue';
+import padWithZero from '../../utils/numbers';
 
 export default {
   components: {
@@ -43,7 +44,7 @@ export default {
   },
   methods: {
     formatTimeValue(timeValue) {
-      return timeValue < 10 ? `0${timeValue}` : timeValue;
+      return padWithZero(timeValue);
     }
   }
 };

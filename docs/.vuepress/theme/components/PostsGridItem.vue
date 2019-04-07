@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-img :src="`/img/posts${post.path}hero.jpg`" aspect-ratio="2.75" />
+    <v-img :src="`/img/posts${post.path}hero.jpg`" aspect-ratio="2.75"/>
     <v-card-title>
       <div>
         <h3 class="headline mb-0">{{ post.title }}</h3>
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import padWithZero from '../../utils/numbers';
+
 export default {
   props: {
     post: {
@@ -32,7 +34,9 @@ export default {
   computed: {
     publishDate() {
       const date = new Date(this.post.frontmatter.date);
-      return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
+      return `${padWithZero(date.getDate())}.${padWithZero(
+        date.getMonth() + 1
+      )}.${date.getFullYear()}`;
     }
   }
 };

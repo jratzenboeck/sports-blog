@@ -26,7 +26,7 @@ import Vuetify, {
   VListTileAvatar
 } from 'vuetify/lib';
 import 'vuetify/src/stylus/app.styl';
-import 'material-design-icons-iconfont/dist/material-design-icons.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 import './theme/styles/style.scss';
 import About from './theme/layouts/About.vue';
 import Home from './theme/layouts/Home.vue';
@@ -40,7 +40,14 @@ export default ({
   Vue.component('Layout', Layout);
 
   Vue.use(Vuetify, {
-    iconfont: 'md',
+    iconfont: 'fa',
+    icons: {
+      facebook: 'fab fa-facebook',
+      twitter: 'fab fa-twitter',
+      home: 'fas fa-home',
+      person: 'fas fa-user',
+      medal: 'fa fa-medal'
+    },
     components: {
       VApp,
       VLayout,

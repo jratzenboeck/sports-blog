@@ -5,7 +5,8 @@
       <v-spacer></v-spacer>
       <div v-for="account in socialAccounts" :key="account.id" class="mx-2">
         <a :href="`${account.url}`" target="_blank" rel="noopener">
-          <img :src="`${account.iconUrl}`" :alt="`${account.name}`" width="20" height="100%">
+          <!--<img :src="`${account.iconUrl}`" :alt="`${account.name}`" width="20" height="100%" />-->
+          <v-icon dark v-text="account.iconUrl" />
         </a>
       </div>
     </v-layout>
@@ -21,13 +22,13 @@ export default {
           id: 1,
           name: 'Facebook',
           url: 'https://www.facebook.com/jurgen.ratzenbock',
-          iconUrl: '/img/icons/facebook.svg'
+          iconUrl: this.$vuetify.icons.facebook
         },
         {
           id: 2,
           name: 'Twitter',
           url: 'https://twitter.com/j_ratzenboeck',
-          iconUrl: '/img/icons/twitter.svg'
+          iconUrl: this.$vuetify.icons.twitter
         }
       ]
     };
