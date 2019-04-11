@@ -25,7 +25,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "css-loader": "^2.1.1",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -37,11 +37,12 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vuepress": "^1.0.0-alpha.44"
+    "vuepress": "^1.0.0-alpha.47"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "vue-analytics": "^5.16.4",
+    "vue-cookie-law": "^1.10.0",
     "vuetify": "^1.5.8"
   }
 }

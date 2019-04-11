@@ -3,7 +3,7 @@ title: Über mich
 layout: About
 meta:
   - name: description
-  - content: Erfahre mehr über den Sportler Jürgen Ratzenböck
+    content: Erfahre mehr über den Sportler Jürgen Ratzenböck
 ---
 
 > "Visionen und Träume sind da um realisiert zu werden."

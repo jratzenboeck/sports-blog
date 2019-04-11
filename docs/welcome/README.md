@@ -3,7 +3,7 @@ title: 'Startschuss für jratzenboeck :blue_heart: sports'
 date: 2019-04-07
 meta:
   - name: description
-  - content: Mein persönlicher Sport Blog mit Themen zu Motivation, Training, Wettkampf, Regeneration und vielem mehr.
+    content: Mein persönlicher Sport Blog mit Themen zu Motivation, Training, Wettkampf, Regeneration und vielem mehr.
 ---
 
 3,2,1... Willkommen auf meinem brandneuen Sport Blog. Freut mich dass du hier bist. Hier möchte ich in den nächsten Wochen und Monaten regelmäßig über mein Lieblingshobby Ausdauersport erzählen und dabei interessante Erfahrungen und Tipps weitergeben.

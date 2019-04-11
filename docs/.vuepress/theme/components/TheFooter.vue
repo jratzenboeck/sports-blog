@@ -8,12 +8,22 @@
           <BaseIcon dark :icon-name="account.icon" />
         </a>
       </div>
+      <cookie-law
+        theme="dark-lime"
+        message="Diese Webseite verwendet Cookies für Analyse- und Messungszwecke. Durch die Nutzung dieser Webseite stimmen Sie der Nutzung von Cookies zu."
+        button-text="Ok, verstanden"
+      />
     </v-layout>
   </v-footer>
 </template>
 
 <script>
+import CookieLaw from 'vue-cookie-law';
+
 export default {
+  components: {
+    CookieLaw
+  },
   data() {
     return {
       socialAccounts: [

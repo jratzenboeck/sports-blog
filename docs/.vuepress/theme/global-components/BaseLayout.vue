@@ -1,8 +1,10 @@
 <template>
   <v-app>
     <TheHeader />
-    <v-content class="pa-3">
-      <slot />
+    <v-content>
+      <v-container class="c-content-container">
+        <slot />
+      </v-container>
     </v-content>
     <TheFooter />
   </v-app>
@@ -20,4 +22,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.c-content-container {
+  max-width: 1050px;
+}
+</style>

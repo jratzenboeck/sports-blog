@@ -39,17 +39,17 @@ export default {
           time: {
             hours: 1,
             minutes: 43,
-            seconds: 40
+            seconds: 43
           }
         },
         {
           competitionType: 'Viertelmarathon',
-          competitionDistance: '10,5km Laufen',
+          competitionDistance: '10,1km Laufen',
           competitionDescription: 'Linz Marathon 2007',
           time: {
             hours: 0,
-            minutes: 45,
-            seconds: 30
+            minutes: 46,
+            seconds: 59
           }
         }
       ]

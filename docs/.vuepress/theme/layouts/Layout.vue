@@ -1,9 +1,7 @@
 <template>
   <BaseLayout>
-    <h1 class="text-xs-center">{{ $page.title }}</h1>
-    <v-container>
-      <Content class="mt-3" />
-    </v-container>
+    <h1 class="text-xs-center pb-3">{{ $page.title }}</h1>
+    <Content />
   </BaseLayout>
 </template>
 
@@ -11,4 +9,4 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
