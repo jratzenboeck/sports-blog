@@ -24,15 +24,16 @@ import Vuetify, {
   VListTileContent,
   VListTileTitle,
   VListTileAvatar
-} from 'vuetify/lib';
-import 'vuetify/src/stylus/app.styl';
-import '@fortawesome/fontawesome-free/css/all.css';
+} from '../../node_modules/vuetify/lib';
+import '../../node_modules/vuetify/src/stylus/app.styl';
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import './theme/styles/style.scss';
-import VueAnalytics from 'vue-analytics';
+import VueAnalytics from '../../node_modules/vue-analytics';
 import About from './theme/layouts/About.vue';
 import Home from './theme/layouts/Home.vue';
 import Layout from './theme/layouts/Layout.vue';
 import { trackClick } from './utils/ga';
+import CookieLaw from '../../node_modules/vue-cookie-law';
 
 export default ({ Vue, router }) => {
   Vue.component('About', About);
@@ -41,6 +42,7 @@ export default ({ Vue, router }) => {
 
   Vue.prototype.$trackClick = trackClick;
 
+  Vue.use(CookieLaw);
   Vue.use(VueAnalytics, {
     id: 'UA-42874473-5',
     router,
