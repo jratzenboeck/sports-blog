@@ -87,7 +87,8 @@ export default ({ Vue, router }) => {
       VListTile,
       VListTileContent,
       VListTileTitle,
-      VListTileAvatar
+      VListTileAvatar,
+      CookieLaw
     }
   });
 };
