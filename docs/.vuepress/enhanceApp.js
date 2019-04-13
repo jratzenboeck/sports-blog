@@ -33,7 +33,6 @@ import About from './theme/layouts/About.vue';
 import Home from './theme/layouts/Home.vue';
 import Layout from './theme/layouts/Layout.vue';
 import { trackClick } from './utils/ga';
-import CookieLaw from '../../node_modules/vue-cookie-law';
 
 export default ({ Vue, router }) => {
   Vue.component('About', About);
@@ -42,7 +41,6 @@ export default ({ Vue, router }) => {
 
   Vue.prototype.$trackClick = trackClick;
 
-  Vue.use(CookieLaw);
   Vue.use(VueAnalytics, {
     id: 'UA-42874473-5',
     router,
@@ -87,8 +85,7 @@ export default ({ Vue, router }) => {
       VListTile,
       VListTileContent,
       VListTileTitle,
-      VListTileAvatar,
-      CookieLaw
+      VListTileAvatar
     }
   });
 };
