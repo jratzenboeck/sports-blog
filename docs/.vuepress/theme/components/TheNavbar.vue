@@ -5,7 +5,7 @@
         class="hidden-sm-and-up"
         @click="showNavigationDrawer = !showNavigationDrawer"
       />
-      <v-img src="/img/profile.jpg" max-height="60" max-width="60" class="c-profile-picture"/>
+      <v-img src="/img/profile.jpg" max-height="60" max-width="60" class="c-profile-picture" />
       <v-toolbar-title>jratzenboeck | sports</v-toolbar-title>
       <v-toolbar-items class="hidden-xs-only ml-2">
         <v-btn
@@ -14,7 +14,8 @@
           dark
           flat
           :to="item.path"
-        >{{ item.title }}</v-btn>
+          >{{ item.title }}</v-btn
+        >
       </v-toolbar-items>
     </v-toolbar>
     <v-navigation-drawer v-model="showNavigationDrawer" temporary absolute width="250">
@@ -26,7 +27,7 @@
           avatar
         >
           <v-list-tile-avatar>
-            <BaseIcon :icon-name="item.icon"/>
+            <BaseIcon :icon-name="item.icon" />
           </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
