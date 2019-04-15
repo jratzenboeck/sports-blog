@@ -6,13 +6,13 @@
       </template>
     </NumberAnimation>
     <span>:</span>
-    <NumberAnimation :end-value="minutes" :animation-delay="1" :animation-duration="3">
+    <NumberAnimation :end-value="minutes" :animation-delay="1" :animation-duration="2">
       <template v-slot="{ currentValue }">
         <h3 class="d-inline-block">{{ formatTimeValue(currentValue) }}</h3>
       </template>
     </NumberAnimation>
     <span>:</span>
-    <NumberAnimation :end-value="seconds" :animation-delay="4" :animation-duration="3">
+    <NumberAnimation :end-value="seconds" :animation-delay="3" :animation-duration="2">
       <template v-slot="{ currentValue }">
         <h3 class="d-inline-block">{{ formatTimeValue(currentValue) }}</h3>
       </template>

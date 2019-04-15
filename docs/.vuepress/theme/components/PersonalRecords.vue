@@ -23,6 +23,16 @@ export default {
     return {
       records: [
         {
+          competitionType: 'Halbmarathon',
+          competitionDistance: '21,1km Laufen',
+          competitionDescription: 'Linz Marathon 2019',
+          time: {
+            hours: 1,
+            minutes: 42,
+            seconds: 50
+          }
+        },
+        {
           competitionType: 'Triathlon Sprintdistanz',
           competitionDistance: '0,75km Schwimmen, 25km Radfahren, 5km Laufen',
           competitionDescription: 'Linz Triathlon 2018',
@@ -30,16 +40,6 @@ export default {
             hours: 1,
             minutes: 31,
             seconds: 31
-          }
-        },
-        {
-          competitionType: 'Halbmarathon',
-          competitionDistance: '21,1km Laufen',
-          competitionDescription: 'Linz Marathon 2009',
-          time: {
-            hours: 1,
-            minutes: 43,
-            seconds: 43
           }
         },
         {
