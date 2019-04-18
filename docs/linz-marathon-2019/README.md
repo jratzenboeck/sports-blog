@@ -6,15 +6,15 @@ meta:
     content: Zusammenfassung des Linz Donau Marathons 2019 aus meiner Perspektive
 ---
 
-<v-img src="/img/posts/linz-marathon-2019/hero.jpg" alt="Start auf der Autobahnbrücke" />
-<p style="font-size: 0.8em; margin-top: 3px">Quelle Foto: Linz Marathon / Klaus Mitterhauser www.klaus-mitterhauser.at</p>
-
 Nun ist es soweit. Der berühmte Tag X, in diesem Fall der 14.04.2019 ist gekommen. Heute gilt es die beste Leistung abzurufen und die schweißtreibende Vorbereitung in einen tollen Wettkampf umzusetzen. Die Rede ist vom Linz Donau Marathon 2019, der mein erstes sportliches Wettkampfhighlight in diesem Jahr ist.
 
 <!-- more -->
 
 Es sollte, so viel sei verraten, ein äußerst erfreulicher Sporttag werden.
 Mit den folgenden Absätzen möchte ich das Laufhighlight in der oberösterreichischen Landeshauptstadt und meine Performance über die 21,1km des Halbmarathons nochmals kurz revue passieren lassen.
+
+<v-img src="/img/posts/linz-marathon-2019/hero.jpg" alt="Start auf der Autobahnbrücke" />
+<p style="font-size: 0.8em; margin-top: 3px">Quelle Foto: Linz Marathon / Klaus Mitterhauser www.klaus-mitterhauser.at</p>
 
 ## Start in den Tag X
 
