@@ -5,7 +5,9 @@
         class="hidden-sm-and-up"
         @click="showNavigationDrawer = !showNavigationDrawer"
       />
-      <v-img src="/img/profile.jpg" max-height="60" max-width="60" class="c-profile-picture" />
+      <router-link to="/" class="d-flex">
+        <img src="/img/profile.jpg" class="c-profile-picture" />
+      </router-link>
       <v-toolbar-title>jratzenboeck | sports</v-toolbar-title>
       <v-toolbar-items class="hidden-xs-only ml-2">
         <v-btn
@@ -51,5 +53,8 @@ export default {
 <style scoped lang="scss">
 .c-profile-picture {
   border-radius: 50%;
+  height: 65px;
+  width: auto;
+  color: #fff;
 }
 </style>

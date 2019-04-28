@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-lg>
     <v-layout row wrap>
-      <v-flex v-for="post in posts" :key="post.key" xs12 sm6>
+      <v-flex v-for="post in posts" :key="post.key" sm12 md6>
         <PostsGridItem :post="post" />
       </v-flex>
     </v-layout>
