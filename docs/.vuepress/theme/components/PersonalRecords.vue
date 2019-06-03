@@ -1,11 +1,7 @@
 <template>
   <v-container grid-list-lg>
     <v-layout row wrap justify-center>
-      <v-flex
-        v-for="(record, index) in records"
-        :key="index"
-        :class="['xs12', index > 0 ? 'sm6' : '']"
-      >
+      <v-flex v-for="(record, index) in records" :key="index" :class="['xs12', 'sm6']">
         <PersonalRecordsItem :record="record" />
       </v-flex>
     </v-layout>
@@ -22,6 +18,16 @@ export default {
   data() {
     return {
       records: [
+        {
+          competitionType: 'Triathlon Olympische Distanz',
+          competitionDistance: '0,9km Schwimmen, 42km Radfahren, 10,5km Laufen',
+          competitionDescription: 'Linz Triathlon 2019',
+          time: {
+            hours: 2,
+            minutes: 29,
+            seconds: 57
+          }
+        },
         {
           competitionType: 'Halbmarathon',
           competitionDistance: '21,1km Laufen',
