@@ -39,6 +39,7 @@ export default ({ Vue, router }) => {
   Vue.component('Home', Home);
   Vue.component('Layout', Layout);
 
+  // eslint-disable-next-line no-param-reassign
   Vue.prototype.$trackClick = trackClick;
 
   Vue.use(VueAnalytics, {

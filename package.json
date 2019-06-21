@@ -23,26 +23,26 @@
   },
   "homepage": "https://github.com/jratzenboeck/sports-blog#readme",
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.12.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vuepress": "^1.0.0-alpha.47"
+    "vuepress": "^1.0.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1",
-    "vue-analytics": "^5.16.4",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "vue-analytics": "^5.17.0",
     "vue-cookie-law": "^1.10.0",
-    "vuetify": "^1.5.8"
+    "vuetify": "^1.5.16"
   }
 }
