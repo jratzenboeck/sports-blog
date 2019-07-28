@@ -1,15 +1,23 @@
 const fs = require('fs');
 
+function padNumber(number) {
+  return number < 10 ? number.toString().padStart(2, '0') : number;
+}
+
 // intialize resulting string with XML header information
 let sitemapXml =
   '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-const lastMod = `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`;
+const currentDateTime = new Date();
+const year = currentDateTime.getFullYear();
+const month = padNumber(currentDateTime.getMonth() + 1);
+const day = padNumber(currentDateTime.getDate());
+const lastMod = `${year}-${month}-${day}`;
 // foreach directory inside the docs folder (not recursive)
 fs.readdirSync('docs', { withFileTypes: true })
-  .filter(directoryOrFile => directoryOrFile.isDirectory())
+  .filter(directoryOrFile => directoryOrFile.isDirectory() && directoryOrFile.name !== '.vuepress')
   .forEach(directory => {
     sitemapXml += `<url>
-        <loc>https://sports.jratzenboeck.com/${directory.name}</loc>
+        <loc>https://sports.jratzenboeck.com/${directory.name}/</loc>
         <lastmod>${lastMod}</lastmod>
       </url>`;
   });

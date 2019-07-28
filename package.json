@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development vuepress dev docs",
     "build": "NODE_ENV=development vuepress build docs",
-    "prod": "NODE_ENV=production vuepress build docs"
+    "prod": "NODE_ENV=production vuepress build docs",
+    "generate:sitemap": "node generate-sitemap.js"
   },
   "repository": {
     "type": "git",

@@ -6,6 +6,12 @@ set -e
 # build
 npm run prod
 
+# generate sitemap.xml
+npm run generate:sitemap
+
+# submit sitemap to google
+curl http://www.google.com/ping?sitemap=https://sports.jratzenboeck.com/sitemap.xml
+
 # navigate into the build output directory
 cd docs/.vuepress/dist
 
