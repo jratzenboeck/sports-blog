@@ -1,0 +1,7 @@
+@import 'breakpoints';
+
+@media (min-width: $md) {
+  .u-padding-right-md {
+    padding-right: 10px;
+  }
+}
