@@ -38,7 +38,7 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
